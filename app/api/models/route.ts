@@ -79,7 +79,7 @@ export async function GET(request: NextRequest) {
       platform,
     });
   } catch {
-   return NextResponse.json({ error: 'خطأ في الخادم' }, { status: 500 });
+return NextResponse.json({ error: 'خطأ في الخادم' }, { status: 500 });
+}
 
-  }
 }
