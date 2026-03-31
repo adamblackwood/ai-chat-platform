@@ -26,7 +26,7 @@ export async function GET(request: NextRequest) {
 
       const { data: models, error } = await adminClient
         .from('global_models')
-        .select(\`
+        .select(`
           id,
           model_id,
           model_name,
