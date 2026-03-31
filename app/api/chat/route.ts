@@ -131,10 +131,10 @@ export async function POST(request: NextRequest) {
         });
       }
 
-      return NextResponse.json(
-      { error: `خطأ من المنصة: ${providerResponse.status}` }
+return NextResponse.json(
+  { error: `خطأ من المنصة: ${providerResponse.status}`, status: providerResponse.status }
+);
 
-        { status: providerResponse.status }
       );
     }
 
