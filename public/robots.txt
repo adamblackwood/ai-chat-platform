@@ -1,0 +1,21 @@
+# منصة الدردشة بالذكاء الاصطناعي - AI Chat Platform
+# https://your-app.pages.dev
+
+User-agent: *
+Allow: /
+Allow: /ar
+Allow: /en
+Disallow: /chat
+Disallow: /admin
+Disallow: /settings
+Disallow: /personas/create
+Disallow: /api/
+Disallow: /_next/
+Disallow: /ar/chat
+Disallow: /en/chat
+Disallow: /ar/admin
+Disallow: /en/admin
+Disallow: /ar/settings
+Disallow: /en/settings
+
+Sitemap: https://your-app.pages.dev/sitemap.xml
