@@ -125,7 +125,7 @@ export async function POST(request: NextRequest) {
         await adminClient.from('notifications').insert({
           type: providerResponse.status === 402 ? 'api_depleted' : 'api_low_balance',
           title: providerResponse.status === 402 ? 'نفاد رصيد API' : 'رصيد API منخفض',
-          message: \`خطأ \${providerResponse.status} من منصة \${platform}: \${errorText.substring(0, 200)}\`,
+           message: "خطأ ${providerResponse.status} من منصة ${platform}: ${errorText.substring(0, 200)}",
           priority: 'urgent',
           metadata: { platform, status: providerResponse.status },
         });
