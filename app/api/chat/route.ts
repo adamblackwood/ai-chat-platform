@@ -132,7 +132,7 @@ export async function POST(request: NextRequest) {
       }
 
       return NextResponse.json(
-        { error: \`خطأ من المنصة: \${providerResponse.status}\` },
+      { error: \`خطأ من المنصة: \${providerResponse.status}\` }
         { status: providerResponse.status }
       );
     }
